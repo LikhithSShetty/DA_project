@@ -208,7 +208,7 @@ function App() {
 
         {/* --- File Upload Section --- */} 
         <section className="py-6">
-          <h2 className="text-xl font-semibold mb-3 text-gray-700">1. Upload Document (.pdf, .xlsx, .xls)</h2>
+          <h2 className="text-xl font-semibold mb-3 text-gray-700">1. Upload Document </h2>
           <div className="flex items-center space-x-4">
              <input
                 id="fileInput"
@@ -268,9 +268,9 @@ function App() {
 
         {/* --- Response Section --- */} 
         <section className="py-6">
-           <h2 className="text-xl font-semibold mb-3 text-gray-700">3. LLM Response</h2>
+           <h2 className="text-xl font-semibold mb-3 text-gray-700">3. Answer</h2> {/* Changed heading here */}
             {isLoadingQuery && (
-                <p className="text-gray-500 italic">Waiting for response from LLM...</p>
+                <p className="text-gray-500 italic">Waiting for response.........:)</p>
             )}
             {llmResponse && !isLoadingQuery && (
                 <div className="p-4 bg-gray-50 border border-gray-200 rounded-md whitespace-pre-wrap"> {/* Use pre-wrap to preserve formatting */}
@@ -284,7 +284,7 @@ function App() {
       </main>
 
       <footer className="w-full max-w-4xl mt-8 text-center text-gray-500 text-sm">
-        <p>WebApp running locally.</p>
+        <p>DA_project;).</p>
       </footer>
     </div>
   );
